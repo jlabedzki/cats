@@ -9,6 +9,7 @@ const breedDetailsFromFile = function (breed, callback) {
     console.log(error);
 
     if (!error) callback(data);
+    if (error) callback(undefined);
   });
 
 };
